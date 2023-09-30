@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Sign-up Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Event Sign-up</h1>
+    <form action="/process form" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="event">Event:</label>
+        <select id="event" name="event" required>
+            <option value="conference">Conference</option>
+            <option value="workshop">Workshop</option>
+            <option value="seminar">Seminar</option>
+        </select><br><br>
+
+        <label for="attendees">Number of Attendees:</label>
+        <input type="number" id="attendees" name="attendees" min="1" required><br><br>
+
+        <label>Meal Preference:</label>
+        <input type="radio" id="vegetarian" name="meal" value="vegetarian" required>
+        <label for="vegetarian">Vegetarian</label>
+        <input type="radio" id="non-vegetarian" name="meal" value="non-vegetarian" required>
+        <label for="non-vegetarian">Non-Vegetarian</label><br><br>
+
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
